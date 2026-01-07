@@ -50,6 +50,8 @@ function App() {
   const recognition = useRef<any>(null);
   const { hasKey, getClient, refreshKey } = useApiKey();
 
+  console.log('App rendering, screen:', state.screen, 'hasKey:', hasKey);
+
   useEffect(() => {
     speechSynth.current = window.speechSynthesis;
     if ('webkitSpeechRecognition' in window) {

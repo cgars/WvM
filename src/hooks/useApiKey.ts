@@ -7,9 +7,15 @@ export function useApiKey() {
   const [loading, setLoading] = useState(true);
 
   const checkKey = async () => {
-    const key = await apiKeyStore.getKey();
-    setHasKey(!!key);
-    setLoading(false);
+    try {
+      const key = await apiKeyStore.getKey();
+      setHasKey(!!key);
+    } catch (error) {
+      console.error('Error checking API key:', error);
+      setHasKey(false);
+    } finally {
+      setLoading(false);
+    }
   };
 
   useEffect(() => {

@@ -8,7 +8,22 @@ A quiet, optional, user-led companion for museum visits.
 - Camera integration for taking photos of labels/artwork
 - Text-to-speech in German
 - Optional depth exploration with avatars
+- **NEW: Bring Your Own API Key** for optional online AI assistance
 - No forced flows, no gamification
+
+## What's New: BYO Key Feature
+
+Users can now optionally provide their own OpenAI-compatible API key to unlock:
+- **Online depth explanations** with adjustable detail levels (kurz/mittel/tief)
+- **AI-powered Q&A** about artworks
+- Secure on-device storage (Keychain on iOS, EncryptedSharedPreferences on Android)
+
+**The app works 100% without any API key.** This is an optional enhancement only.
+
+📖 [Full Feature Documentation](BYO_KEY_FEATURE.md)  
+🚀 [Quick Start Guide](QUICK_START.md)  
+💡 [Example Prompts](EXAMPLE_PROMPTS.md)  
+📊 [Implementation Summary](IMPLEMENTATION_SUMMARY.md)
 
 ## Development
 
